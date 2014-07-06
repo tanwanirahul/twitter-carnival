@@ -48,4 +48,4 @@ Endpoints:
 Get continous updates from twitter:
 ====================================
 
-To get the updates from twitter, make a cron job to trigger **_python manage.py search command_ ** on frequent basis.
+To get the updates from twitter, make a cron job to trigger *_python manage.py search command_ * on frequent basis.

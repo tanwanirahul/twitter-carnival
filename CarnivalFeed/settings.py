@@ -114,7 +114,7 @@ SMTP_CONF = {
     "HOST": 'smtp.gmail.com',
     "PORT": 587,
     "SENDER": "rahul.tanwani@hashedin.com",
-    "PASSWORD": "hash@123",
+    "PASSWORD": "",
     "SUBJECT": "#carnival has {count} photos",
     "MESSAGE": "I'm awesome!",
     "FROM": "Eversnap Hashtag",

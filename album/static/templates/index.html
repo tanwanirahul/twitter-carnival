@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>#Carnival Image Gallery</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/main.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+</head>
+<body>
+	<div class="container">
+			<div class="jumbotron back-color ">
+				<h2>Carnival Image Gallery</h2>
+				<p class="light">Gallery displays the the photos posted on Twitter, tagged with #Carnival.</p>
+			</div>
+			<div class="main">
+			<div class="album-container" ng-controller="albumController">
+					<div class="row">
+					<a class="col-lg-4 col-md-6 image-wrap" ng-repeat="media in mediaObjs" href="{{media.media_url_https}}">
+						<img ng-src="{{media.media_url_https}}" class="image-pad img-thumbnail">
+					</a>
+					</div>
+			</div>
+ 		</div>
+	</div>
+	<script type="text/javascript" src="/static/js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
